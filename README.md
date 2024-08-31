@@ -31,8 +31,7 @@ git clone https://github.com/MuTecEn/MusiQAl.git
 
 ## Download data
 
-Please make sure to download the wav files, video frames, and features.
-Json files of QA Pairs: 
+Please make sure to download the wav files, video frames, features, and JSON files from this link: https://zenodo.org/records/13623449
 
 ## Run AVST
 
