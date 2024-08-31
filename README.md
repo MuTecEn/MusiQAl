@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ## Clone the repository
 
 ``` bash
-git clone (this repo)
+git clone https://github.com/MuTecEn/MusiQAl.git
 ```
 
 ## Download data
