@@ -17,13 +17,17 @@ interactive figures
 
 # Requirements
 
-```pip install -r requirements.txt```
+```bash 
+pip install -r requirements.txt
+```
 
 # Usage
 
 ## Clone the repository
 
-```git clone (this repo)```
+``` bash
+git clone (this repo)
+```
 
 ## Download data
 
@@ -32,17 +36,23 @@ Json files of QA Pairs:
 
 ## Run AVST
 
-```python net_grd_avst/main_avst.py --mode train --audio_dir = ./directory/to/your/audio/features/ --video_res14x14_dir = ./directory/to/your/video/features```
+```bash
+python net_grd_avst/main_avst.py --mode train --audio_dir = ./directory/to/your/audio/features/ --video_res14x14_dir = ./directory/to/your/video/features
+```
 
 ## Run LAVISH 
 
-```python3 net_grd_avst/main_avst.py --Adapter_downsample=8 --audio_dir=./directory/to/your/audio/features/ --batch-size=1 --early_stop=5 --epochs=30 --is_before_layernorm=1 --is_bn=0 --is_gate=1 --is_multimodal=1 --is_post_layernorm=1 --is_vit_ln=1 --lr=8e-05 --lr_block=3e-06 --num_conv_group=4 --num_tokens=64 --num_workers=16 --video_res14x14_dir=./directory/to/your/video/features --wandb=1```
+```bash
+python3 net_grd_avst/main_avst.py --Adapter_downsample=8 --audio_dir=./directory/to/your/audio/features/ --batch-size=1 --early_stop=5 --epochs=30 --is_before_layernorm=1 --is_bn=0 --is_gate=1 --is_multimodal=1 --is_post_layernorm=1 --is_vit_ln=1 --lr=8e-05 --lr_block=3e-06 --num_conv_group=4 --num_tokens=64 --num_workers=16 --video_res14x14_dir=./directory/to/your/video/features --wandb=1
+```
 
 ## Test and Compare Results
 
 AVST:
 
-```python net_grd_avst/main_avst.py --mode test --audio_dir = ./directory/to/your/audio/features/ --video_res14x14_dir = ./directory/to/your/video/features```
+```bash
+python net_grd_avst/main_avst.py --mode test --audio_dir = ./directory/to/your/audio/features/ --video_res14x14_dir = ./directory/to/your/video/features
+```
 
 LAVISH: 
 
