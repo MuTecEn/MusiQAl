@@ -1,0 +1,19 @@
+For recreating our work:
+
+1. Use: Data-data-video, which are provided in our folder.
+2. Follow the training steps for the model of your choice.
+	for AVST: https://github.com/GeWu-Lab/MUSIC-AVQA
+	for LAVISH: https://github.com/GenjiB/LAVISH
+3. If you are using our data, please make sure to replace the scripts with the ones provided in our repository.
+
+For making your own MQA Dataset:
+
+1. Update audio_video_sources.xlsx with your paths/desired YouTube links, as well as your desired timestamps.
+2. Run preprocessing.py to download the YouTube videos and cut all your sources at the specified timestamps.
+3. Check the answer distribution of your dataset and add/delete as desired.
+4. Give IDs to the questions you kept and create a new repository with all your videos, giving them unique video_IDs.
+5. Create a question_dictionary.
+6. Create a json file with all your data.
+7. Create three json files for train, val, and test.
+8. Continue with training.
+
