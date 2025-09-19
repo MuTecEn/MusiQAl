@@ -11,7 +11,7 @@ Performances Across 18 Countries and Five Continents: Showcasing a global perspe
 The dataset highlights four specific aspects of music performance: instrument playing, dancing, singing, and their combinations. Recognizing the cultural significance of rhythm and dance, MusiQAl includes music made for dance, integral to many traditions.
 
 ## Data Availability
-For access to the dataset, please visit this link: https://zenodo.org/records/13623449
+For access to the dataset, please visit this link: 10.5281/zenodo.13623448
 
 # Requirements
 
