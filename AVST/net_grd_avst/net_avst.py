@@ -87,11 +87,11 @@ class AVQA_Fusion_Net(nn.Module):
         self.attn_v = nn.MultiheadAttention(512, 4, dropout=0.1)
 
         # question
-        self.question_encoder = QstEncoder(237, 512, 512, 1, 512)
+        self.question_encoder = QstEncoder(235, 512, 512, 1, 512)
 
         self.tanh = nn.Tanh()
         self.dropout = nn.Dropout(0.5)
-        self.fc_ans = nn.Linear(512, 146)
+        self.fc_ans = nn.Linear(512, 143)
 
         self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
         self.fc_gl=nn.Linear(1024,512)
@@ -220,3 +220,4 @@ class AVQA_Fusion_Net(nn.Module):
         out_qa = self.fc_ans(combined_feature)              # [batch_size, ans_vocab_size]
 
         return out_qa, out_match_posi,out_match_nega
+
