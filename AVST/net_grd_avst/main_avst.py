@@ -163,22 +163,6 @@ def test(model, val_loader):
                     AV_caus.append((predicted == target).sum().item())
                 elif type[1] == 'Purpose':
                     AV_purp.append((predicted == target).sum().item())
-                
-                # Now you have the probability distribution
-            probability_distribution = F.softmax(preds, dim=1)
-
-            # Find the index of the highest probability answer
-            predicted_answer_index = torch.argmax(probability_distribution).item()
-
-            answer_dict = "./AVST/data/ans_vocab.txt"
-
-            # Map the index to your answer dictionary
-            predicted_answer = answer_dict[predicted_answer_index]
-
-            # Print the predicted answer
-            print(f"Question: {question}")
-            print(f"Predicted Answer: {predicted_answer}")
-            print(f"Probability Distribution: {probability_distribution.tolist()}")
 
     print('Audio Existential Accuracy: %.2f %%' % (
             100 * sum(A_ext)/len(A_ext)))
@@ -329,4 +313,5 @@ def main():
 
 
 if __name__ == '__main__':
+
     main()
